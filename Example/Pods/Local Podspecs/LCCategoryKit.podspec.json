@@ -1,0 +1,22 @@
+{
+  "name": "LCCategoryKit",
+  "version": "0.1.0",
+  "summary": "A short description of LCCategoryKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/刘成/LCCategoryKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "刘成": "239668571@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/刘成/LCCategoryKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LCCategoryKit/Classes/**/*"
+}
