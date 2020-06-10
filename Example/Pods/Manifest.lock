@@ -1,6 +1,8 @@
 PODS:
   - LCCategoryKit (0.1.0):
+    - Masonry
     - MBProgressHUD
+  - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
@@ -8,6 +10,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Masonry
     - MBProgressHUD
 
 EXTERNAL SOURCES:
@@ -15,7 +18,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LCCategoryKit: 047e972a7fbb0d31280e848d57bf8ee6937198ca
+  LCCategoryKit: 6aceda8480c7a325f8856a90bc39adb4994952fb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
 PODFILE CHECKSUM: b4541e202d46f2f8fb4a39e212bf56ec07789c36
