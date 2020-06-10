@@ -1,6 +1,6 @@
 //
 //  NSString+Size.m
-//  YCBaseUI
+//  LCBaseUI
 //
 //  Created by 刘成 on 2019/3/30.
 //
@@ -10,21 +10,21 @@
 @implementation NSString (Size)
 
 
-- (CGFloat)yc_widthForFont:(UIFont *)font {
-    CGSize size = [self yc_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGFloat)lc_widthForFont:(UIFont *)font {
+    CGSize size = [self lc_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
     return size.width;
 }
 
-- (CGFloat)yc_heightForFont:(UIFont *)font width:(CGFloat)width {
-    CGSize size = [self yc_sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGFloat)lc_heightForFont:(UIFont *)font width:(CGFloat)width {
+    CGSize size = [self lc_sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
     return size.height;
 }
 
-- (CGSize)yc_sizeForFont:(UIFont *)font {
-    return [self yc_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGSize)lc_sizeForFont:(UIFont *)font {
+    return [self lc_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
 }
 
-- (CGSize)yc_sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
+- (CGSize)lc_sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
     CGSize result;
     if (!font) font = [UIFont systemFontOfSize:12];
     if ([self respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
@@ -48,7 +48,7 @@
     return result;
 }
 
-- (CGSize)yc_boundingRectWithSize:(CGSize)size font:(UIFont *)font {
+- (CGSize)lc_boundingRectWithSize:(CGSize)size font:(UIFont *)font {
     NSDictionary *attribute = @{NSFontAttributeName:font};
     CGSize retSize = [self boundingRectWithSize:size
                                         options:

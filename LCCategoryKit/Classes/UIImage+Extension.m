@@ -1,13 +1,13 @@
 //
 //  UIImage+Extension.m
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/4/8.
 //
 
 #import "UIImage+Extension.h"
 #import <AVFoundation/AVFoundation.h>
-#import "UIImage+YCBundle.h"
+#import "UIImage+LCBundle.h"
 @implementation UIImage (Extension)
 
 

@@ -1,6 +1,6 @@
 //
 //  MBProgressHUD+Custom.h
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/4/11.
 //

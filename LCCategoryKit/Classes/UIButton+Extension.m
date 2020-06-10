@@ -100,7 +100,7 @@
 }
 
 #pragma mark ----- 去除frame 创建方式
-+ (instancetype)yc_buttonWithType:(UIButtonType)type title:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *) fontSize bgImage:(UIImage *)bgImage image:(UIImage *)image target:(id)target action:(SEL)action{
++ (instancetype)lc_buttonWithType:(UIButtonType)type title:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *) fontSize bgImage:(UIImage *)bgImage image:(UIImage *)image target:(id)target action:(SEL)action{
     UIButton *button = [self buttonWithType:type];
     if (title) [button setTitle:title forState:UIControlStateNormal];
     if (titleColor) [button setTitleColor:titleColor forState:UIControlStateNormal];
@@ -112,21 +112,21 @@
 }
 
 //系统类型
-+ (instancetype)yc_systemTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target action:(SEL)action{
-    return [self yc_buttonWithType:UIButtonTypeSystem title:title titleColor:titleColor fontSize:fontSize bgImage:nil image:nil target:target action:action];
++ (instancetype)lc_systemTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target action:(SEL)action{
+    return [self lc_buttonWithType:UIButtonTypeSystem title:title titleColor:titleColor fontSize:fontSize bgImage:nil image:nil target:target action:action];
 }
 
 //自定义类型
-+ (instancetype)yc_customTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target  action:(SEL)action{
-    return [self yc_buttonWithType:UIButtonTypeCustom title:title titleColor:titleColor fontSize:fontSize bgImage:nil image:nil target:target action:action];
++ (instancetype)lc_customTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target  action:(SEL)action{
+    return [self lc_buttonWithType:UIButtonTypeCustom title:title titleColor:titleColor fontSize:fontSize bgImage:nil image:nil target:target action:action];
 }
 
-+ (instancetype)yc_customBgImage:(UIImage *)bgImage target:(id)target action:(SEL)action{
-    return [self yc_buttonWithType:UIButtonTypeCustom title:nil titleColor:nil fontSize:nil bgImage:bgImage image:nil target:target action:action];
++ (instancetype)lc_customBgImage:(UIImage *)bgImage target:(id)target action:(SEL)action{
+    return [self lc_buttonWithType:UIButtonTypeCustom title:nil titleColor:nil fontSize:nil bgImage:bgImage image:nil target:target action:action];
 }
 
-+ (instancetype)yc_customImage:(UIImage *)image target:(id)target action:(SEL)action{
-    return [self yc_buttonWithType:UIButtonTypeCustom title:nil titleColor:nil fontSize:nil bgImage:nil image:image target:target action:action];
++ (instancetype)lc_customImage:(UIImage *)image target:(id)target action:(SEL)action{
+    return [self lc_buttonWithType:UIButtonTypeCustom title:nil titleColor:nil fontSize:nil bgImage:nil image:image target:target action:action];
 }
 
 

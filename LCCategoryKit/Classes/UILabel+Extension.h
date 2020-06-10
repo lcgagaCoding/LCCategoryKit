@@ -31,22 +31,22 @@
 /**
  基础创建
  */
-+ (UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines backgroundColor:(UIColor *)backgroundColor;
++ (UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines backgroundColor:(UIColor *)backgroundColor;
 
 /**
  不设置背景色、默认居左
  */
-+ (UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor;
++ (UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor;
 
 /**
  无背景色、可设置行数
  */
-+ (UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines;
++ (UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines;
 
 /**
  无背景色
  */
-+ (UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment;
++ (UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment;
 
 
 /**
@@ -54,5 +54,5 @@
 
  @param labelWidth label宽度
  */
-- (void)yc_textAlignmentLeftAndRight:(CGFloat)labelWidth;
+- (void)lc_textAlignmentLeftAndRight:(CGFloat)labelWidth;
 @end

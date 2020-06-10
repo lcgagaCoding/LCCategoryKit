@@ -268,7 +268,7 @@
 }
 
 
-- (void)yc_radiusWithRadius:(CGFloat)radius corner:(UIRectCorner)corner {
+- (void)lc_radiusWithRadius:(CGFloat)radius corner:(UIRectCorner)corner {
    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
          UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:CGSizeMake(radius, radius)];
@@ -279,8 +279,8 @@
     });
 }
 
-- (void)yc_radiusWithRadius:(CGFloat)radius {
-    [self yc_radiusWithRadius:radius corner:UIRectCornerAllCorners];
+- (void)lc_radiusWithRadius:(CGFloat)radius {
+    [self lc_radiusWithRadius:radius corner:UIRectCornerAllCorners];
 }
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+LCCreate.h"
-#import "UIImage+YCBundle.h"
+#import "UIImage+LCBundle.h"
 
 @implementation UIImageView (LCCreate)
 
@@ -28,7 +28,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
     
     if (bundleName) {
-        imageView.image = [UIImage yc_imgWithName:image bundle:bundleName];
+        imageView.image = [UIImage lc_imgWithName:image bundle:bundleName];
     }else{
         imageView.image = [UIImage imageNamed:image];
     }
@@ -41,7 +41,7 @@
     UIImageView *imageView = [[UIImageView alloc] init];
     
     if (bundle) {
-        imageView.image = [UIImage yc_imgWithName:image bundle:bundle];
+        imageView.image = [UIImage lc_imgWithName:image bundle:bundle];
     }else{
         imageView.image = [UIImage imageNamed:image];
     }

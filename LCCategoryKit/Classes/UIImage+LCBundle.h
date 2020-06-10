@@ -7,8 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (YCBundle)
+@interface UIImage (LCBundle)
 
-+ (instancetype)yc_imgWithName:(NSString *)name bundle:(NSString *)bundleName;
++ (instancetype)lc_imgWithName:(NSString *)name bundle:(NSString *)bundleName;
 
 @end

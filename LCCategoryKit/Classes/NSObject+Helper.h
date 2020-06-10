@@ -1,6 +1,6 @@
 //
 //  NSObject+Helper.h
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/4/9.
 //
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return 控制器
  */
-- (UIViewController *)yc_getCurrentViewController;
+- (UIViewController *)lc_getCurrentViewController;
 
 /**
  安全数组

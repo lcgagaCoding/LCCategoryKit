@@ -1,6 +1,6 @@
 //
 //  UIView+LCCore.m
-//  YCMerchant
+//  LCMerchant
 //
 //  Created by 刘成 on 2018/11/14.
 //  Copyright © 2018年 刘成. All rights reserved.
@@ -26,7 +26,7 @@
     self.layer.mask = shape;
 }
 
-- (void)yc_addRadii
+- (void)lc_addRadii
 {
     UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(4, 4)];
     CAShapeLayer* shape = [[CAShapeLayer alloc] init];

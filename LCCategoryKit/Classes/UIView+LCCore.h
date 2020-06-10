@@ -1,6 +1,6 @@
 //
 //  UIView+LCCore.h
-//  YCMerchant
+//  LCMerchant
 //
 //  Created by 刘成 on 2018/11/14.
 //  Copyright © 2018年 刘成. All rights reserved.
@@ -38,5 +38,5 @@
 /**
   默认4
  */
-- (void)yc_addRadii;
+- (void)lc_addRadii;
 @end

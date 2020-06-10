@@ -1,6 +1,6 @@
 //
 //  UIButton+ImagePosition.h
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/5/24.
 //
@@ -9,11 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, YCImagePosition) {
-    YCImagePositionLeft = 0,               //图片在左，文字在右，默认
-    YCImagePositionRight = 1,              //图片在右，文字在左
-    YCImagePositionTop = 2,                //图片在上，文字在下
-    YCImagePositionBottom = 3              //图片在下，文字在上
+typedef NS_ENUM(NSUInteger, LCImagePosition) {
+    LCImagePositionLeft = 0,               //图片在左，文字在右，默认
+    LCImagePositionRight = 1,              //图片在右，文字在左
+    LCImagePositionTop = 2,                //图片在上，文字在下
+    LCImagePositionBottom = 3              //图片在下，文字在上
 };
 
 
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, YCImagePosition) {
  @param position 图片位置
  @param space 图片和文字的间隔
  */
-- (void)yc_imagePosition:(YCImagePosition)position space:(CGFloat)space;
+- (void)lc_imagePosition:(LCImagePosition)position space:(CGFloat)space;
 @end
 
 NS_ASSUME_NONNULL_END

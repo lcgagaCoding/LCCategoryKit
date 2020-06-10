@@ -1,14 +1,14 @@
 //
 //  NSString+LCAttriButedCreate.m
-//  YCSaas
+//  LCSaas
 //
 //  Created by 刘成 on 2018/5/29.
 //  Copyright © 2018年 刘成. All rights reserved.
 //
 
-#import "NSString+YCAttriButedCreate.h"
+#import "NSString+LCAttriButedCreate.h"
 
-@implementation NSString (YCAttriButedCreate)
+@implementation NSString (LCAttriButedCreate)
 - (NSMutableAttributedString *)attributedWithTextColor:(UIColor*)color{
     NSMutableAttributedString *attri = [[NSMutableAttributedString alloc]initWithString:self];
     [attri addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, [self length])];

@@ -60,7 +60,7 @@
 /// @param image 图片
 /// @param target 目标
 /// @param action 事件    
-+ (instancetype)yc_buttonWithType:(UIButtonType)type title:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *) fontSize bgImage:(UIImage *)bgImage image:(UIImage *)image target:(id)target action:(SEL)action;
++ (instancetype)lc_buttonWithType:(UIButtonType)type title:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *) fontSize bgImage:(UIImage *)bgImage image:(UIImage *)image target:(id)target action:(SEL)action;
 
 /// 系统类型的文字按钮
 /// @param title 标题
@@ -68,7 +68,7 @@
 /// @param fontSize 标题大小
 /// @param target 目标
 /// @param action 事件
-+ (instancetype)yc_systemTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target action:(SEL)action;
++ (instancetype)lc_systemTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target action:(SEL)action;
 
 /// 自定义类型的文字按钮
 /// @param title 标题
@@ -76,19 +76,19 @@
 /// @param fontSize 标题大小
 /// @param target target
 /// @param action action
-+ (instancetype)yc_customTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target action:(SEL)action;
++ (instancetype)lc_customTextWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(UIFont *)fontSize target:(id)target action:(SEL)action;
 
 /// 单独设置背景图片作为按钮
 /// @param bgImage 背景图片
 /// @param target target
 /// @param action action
-+ (instancetype)yc_customBgImage:(UIImage *)bgImage target:(id)target action:(SEL)action;
++ (instancetype)lc_customBgImage:(UIImage *)bgImage target:(id)target action:(SEL)action;
 
 /// 单独图片作为按钮
 /// @param image image
 /// @param target target
 /// @param action action
-+ (instancetype)yc_customImage:(UIImage *)image target:(id)target action:(SEL)action;
++ (instancetype)lc_customImage:(UIImage *)image target:(id)target action:(SEL)action;
 
 //按钮可点击范围
 @property(nonatomic, assign) UIEdgeInsets hitTestEdgeInsets;

@@ -1,6 +1,6 @@
 //
 //  UIImage+Extension.h
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/4/8.
 //

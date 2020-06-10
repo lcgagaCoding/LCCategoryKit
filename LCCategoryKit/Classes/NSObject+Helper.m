@@ -1,6 +1,6 @@
 //
 //  NSObject+Helper.m
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/4/9.
 //
@@ -14,7 +14,7 @@
  
  @return 控制器
  */
-- (UIViewController *)yc_getCurrentViewController{
+- (UIViewController *)lc_getCurrentViewController{
     UIViewController* currentViewController = [[UIApplication sharedApplication] keyWindow].rootViewController;
     BOOL runLoopFind = YES;
     while (runLoopFind) {

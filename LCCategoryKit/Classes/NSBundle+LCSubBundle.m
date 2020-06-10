@@ -5,11 +5,11 @@
 //  Created by 刘成 on 2019/4/3.
 //
 
-#import "NSBundle+YCSubBundle.h"
+#import "NSBundle+LCSubBundle.h"
 
-@implementation NSBundle (YCSubBundle)
+@implementation NSBundle (LCSubBundle)
 
-+ (instancetype)yc_subBundleWithBundleName:(NSString *)bundleName targetClass:(Class)targetClass{
++ (instancetype)lc_subBundleWithBundleName:(NSString *)bundleName targetClass:(Class)targetClass{
     //并没有拿到子bundle
     NSBundle *bundle = [NSBundle bundleForClass:targetClass];
     //在这个路径下找到子bundle的路径

@@ -1,6 +1,6 @@
 //
 //  UITableViewCell+SeperatorLine.h
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/5/25.
 //
@@ -9,25 +9,25 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, YCBottomLineType) {
-    YCBottomLineTypeZero,
-    YCBottomLineTypeLeftInterspace,
-    YCBottomLineTypeLeftAndRightInterspace
+typedef NS_ENUM(NSUInteger, LCBottomLineType) {
+    LCBottomLineTypeZero,
+    LCBottomLineTypeLeftInterspace,
+    LCBottomLineTypeLeftAndRightInterspace
 };
 
 @interface UITableViewCell (SeperatorLine)
 
 /** 显示下分割线 */
-@property (assign, nonatomic) BOOL yc_showBottomLine;
+@property (assign, nonatomic) BOOL lc_showBottomLine;
 
 /* 偏移量 */
-@property (nonatomic, assign) CGFloat yc_offset;
+@property (nonatomic, assign) CGFloat lc_offset;
 
-@property (strong, nonatomic, readonly) UIView *yc_bottomLineView;
+@property (strong, nonatomic, readonly) UIView *lc_bottomLineView;
 //设置底部分割线类型
-@property (assign, nonatomic) YCBottomLineType yc_bottomLineType;
+@property (assign, nonatomic) LCBottomLineType lc_bottomLineType;
 
-- (void)yc_showBottomLineWithLineType:(YCBottomLineType)lineType;
+- (void)lc_showBottomLineWithLineType:(LCBottomLineType)lineType;
 
 @end
 

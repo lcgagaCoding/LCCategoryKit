@@ -50,7 +50,7 @@
 
 #pragma mark ------- 去除frame
 
-+ (UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines backgroundColor:(UIColor *)backgroundColor{
++ (UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines backgroundColor:(UIColor *)backgroundColor{
     UILabel *label = [[UILabel alloc] init];
     if (text) label.text = [NSString stringWithFormat:@"%@",text];
     if (textColor) label.textColor = textColor;
@@ -63,25 +63,25 @@
 }
 
 //添加快速创建的方法
-+ (UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
++ (UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
 {
-    return [UILabel yc_labelWithText:text textFont:textFont textColor:textColor textAlignment:textAlignment numberOfLines:0 backgroundColor:nil];
+    return [UILabel lc_labelWithText:text textFont:textFont textColor:textColor textAlignment:textAlignment numberOfLines:0 backgroundColor:nil];
 }
 
 //添加快速创建的方法
-+(UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines
++(UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment numberOfLines:(NSInteger)numberOfLines
 {
-    return [UILabel yc_labelWithText:text textFont:textFont textColor:textColor textAlignment:textAlignment numberOfLines:numberOfLines backgroundColor:nil];
+    return [UILabel lc_labelWithText:text textFont:textFont textColor:textColor textAlignment:textAlignment numberOfLines:numberOfLines backgroundColor:nil];
 }
 
 //添加快速创建的方法
-+(UILabel *)yc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor
++(UILabel *)lc_labelWithText:(NSString *)text textFont:(UIFont *)textFont textColor:(UIColor *)textColor
 {
-    return [UILabel yc_labelWithText:text textFont:textFont textColor:textColor textAlignment:NSTextAlignmentLeft numberOfLines:0 backgroundColor:nil];
+    return [UILabel lc_labelWithText:text textFont:textFont textColor:textColor textAlignment:NSTextAlignmentLeft numberOfLines:0 backgroundColor:nil];
     
 }
 
-- (void)yc_textAlignmentLeftAndRight:(CGFloat)labelWidth {
+- (void)lc_textAlignmentLeftAndRight:(CGFloat)labelWidth {
     
     if (self.text == nil || self.text.length == 0) {
         return;

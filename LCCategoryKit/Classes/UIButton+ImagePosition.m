@@ -1,6 +1,6 @@
 //
 //  UIButton+ImagePosition.m
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/5/24.
 //
@@ -9,7 +9,7 @@
 
 @implementation UIButton (ImagePosition)
 
-- (void)yc_imagePosition:(YCImagePosition)position space:(CGFloat)space {
+- (void)lc_imagePosition:(LCImagePosition)position space:(CGFloat)space {
  
     CGFloat imageWidth = self.imageView.image.size.width;
     CGFloat imageHeight = self.imageView.image.size.height;
@@ -26,19 +26,19 @@
     //label中心移动的y距离
     CGFloat labelOffsetY = labelheight / 2 + space / 2;
     switch (position) {
-        case YCImagePositionLeft:
+        case LCImagePositionLeft:
             self.imageEdgeInsets = UIEdgeInsetsMake(0, - space / 2, 0, space / 2);
             self.titleEdgeInsets = UIEdgeInsetsMake(0, space / 2, 0, -space / 2);
             break;
-        case YCImagePositionRight:
+        case LCImagePositionRight:
             self.imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth + space/2, 0, -(labelWidth + space/2));
             self.titleEdgeInsets = UIEdgeInsetsMake(0, -(imageHeight + space/2), 0, imageHeight + space/2);
             break;
-        case YCImagePositionTop:
+        case LCImagePositionTop:
             self.imageEdgeInsets = UIEdgeInsetsMake(-imageOffsetY, imageOffsetX, imageOffsetY, -imageOffsetX);
             self.titleEdgeInsets = UIEdgeInsetsMake(labelOffsetY, -labelOffsetX, -labelOffsetY, labelOffsetX);
             break;
-        case YCImagePositionBottom:
+        case LCImagePositionBottom:
             self.imageEdgeInsets = UIEdgeInsetsMake(imageOffsetY, imageOffsetX, -imageOffsetY, -imageOffsetX);
             self.titleEdgeInsets = UIEdgeInsetsMake(-labelOffsetY, -labelOffsetX, labelOffsetY, labelOffsetX);
             break;

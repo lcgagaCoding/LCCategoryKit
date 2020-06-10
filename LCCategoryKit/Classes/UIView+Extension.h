@@ -65,7 +65,7 @@
 + (void)shakeAnimationForView:(UIView *)view;
 
 //设置圆角
-- (void)yc_radiusWithRadius:(CGFloat)radius corner:(UIRectCorner)corner ;
-- (void)yc_radiusWithRadius:(CGFloat)radius ;
+- (void)lc_radiusWithRadius:(CGFloat)radius corner:(UIRectCorner)corner ;
+- (void)lc_radiusWithRadius:(CGFloat)radius ;
 
 @end

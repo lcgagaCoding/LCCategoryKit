@@ -1,6 +1,6 @@
 //
 //  UILabel+Insets.m
-//  YCCategoryModule
+//  LCCategoryModule
 //
 //  Created by 刘成 on 2019/5/3.
 //

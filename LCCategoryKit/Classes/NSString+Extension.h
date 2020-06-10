@@ -16,54 +16,54 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return 非空YES
  */
-- (BOOL)yc_isNotEmpty;
+- (BOOL)lc_isNotEmpty;
 
 /**
  空验证
 
  @return 空YES
  */
-- (BOOL)yc_isEmpty;
-+ (BOOL)yc_isEmptyStr:(NSString *)str;
+- (BOOL)lc_isEmpty;
++ (BOOL)lc_isEmptyStr:(NSString *)str;
 
 // 实现点语法，如果字符串为nil，会崩溃
 /** a + b -> ab */
-- (NSString *)yc_suffix:(NSString *)aString;
+- (NSString *)lc_suffix:(NSString *)aString;
 
 /** a + b -> ba */
-- (NSString *)yc_prefix:(NSString *)aString;
+- (NSString *)lc_prefix:(NSString *)aString;
 
 /** a + ( , ) -> (a) */
-- (NSString *)yc_wrapLeft:(NSString *)lString right:(NSString *)rString;
+- (NSString *)lc_wrapLeft:(NSString *)lString right:(NSString *)rString;
 
 /** a + ' -> 'a' */
-- (NSString *)yc_wrap:(NSString *)aString;
+- (NSString *)lc_wrap:(NSString *)aString;
 
 - (NSString *)base64EncodeString:(NSString *)string;
 
-- (NSString *)yc_344_mobile;
+- (NSString *)lc_344_mobile;
 
-- (NSString *)yc_deleteEmpty;
+- (NSString *)lc_deleteEmpty;
 
 //垫款金额
-- (NSString *)yc_fourBitsConversion;
+- (NSString *)lc_fourBitsConversion;
 
 //手机号为空
-- (NSString *)yc_344_mobile_empty;
+- (NSString *)lc_344_mobile_empty;
 
 //公里数
-- (NSString *)yc_mileage;
+- (NSString *)lc_mileage;
 
 //银行卡 6666-8888-9999-0000 格式
 - (NSString *)bankCardFormat;
 
 /** 10/10.000 -> 10.00 */
-- (NSString *)yc_leave2Decimal;
+- (NSString *)lc_leave2Decimal;
 
 //汉字转拼音
 + (NSString *)transformPinYinWithString:(NSString *)chinese;
 
-+ (BOOL)yc_validMobile:(NSString *)mobile;
++ (BOOL)lc_validMobile:(NSString *)mobile;
 
 
 

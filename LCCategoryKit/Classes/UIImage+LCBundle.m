@@ -5,17 +5,17 @@
 //  Created by wanggang on 2018/5/21.
 //
 
-#import "UIImage+YCBundle.h"
+#import "UIImage+LCBundle.h"
 
-@implementation UIImage (YCBundle)
+@implementation UIImage (LCBundle)
 
 
-+ (instancetype)yc_imgWithName:(NSString *)name bundle:(NSString *)bundleName{
++ (instancetype)lc_imgWithName:(NSString *)name bundle:(NSString *)bundleName{
     
-    return [UIImage yc_imageWithNamed:name bundle:bundleName type:@"png"];
+    return [UIImage lc_imageWithNamed:name bundle:bundleName type:@"png"];
 }
 
-+ (instancetype)yc_imageWithNamed:(NSString *)name bundle:(NSString *)bundleName type:(NSString *)type {
++ (instancetype)lc_imageWithNamed:(NSString *)name bundle:(NSString *)bundleName type:(NSString *)type {
     
     NSString *mainBundlePath = [NSBundle mainBundle].bundlePath;
     NSString *bundlePath = [NSString stringWithFormat:@"%@/%@.bundle",mainBundlePath,bundleName];

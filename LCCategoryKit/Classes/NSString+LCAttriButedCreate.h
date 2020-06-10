@@ -1,6 +1,6 @@
 //
 //  NSString+LCAttriButedCreate.h
-//  YCSaas
+//  LCSaas
 //
 //  Created by 刘成 on 2018/5/29.
 //  Copyright © 2018年 刘成. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (YCAttriButedCreate)
+@interface NSString (LCAttriButedCreate)
 
 - (NSMutableAttributedString *)attributedWithTextColor:(UIColor*)color;
 - (NSMutableAttributedString *)attributedWithTextColor:(UIColor*)color range:(NSRange)range;

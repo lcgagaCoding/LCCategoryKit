@@ -9,40 +9,40 @@
 
 @implementation NSString (Extension)
 
-- (BOOL)yc_isNotEmpty {
+- (BOOL)lc_isNotEmpty {
     
     NSString *result = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return result.length > 0;
 }
 
-- (BOOL)yc_isEmpty {
+- (BOOL)lc_isEmpty {
     
     NSString *result = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return result.length <= 0;
 }
 
-+ (BOOL)yc_isEmptyStr:(NSString *)str {
++ (BOOL)lc_isEmptyStr:(NSString *)str {
     NSString *result = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return result.length <= 0;
 }
 
-- (NSString *)yc_suffix:(NSString *)aString {
+- (NSString *)lc_suffix:(NSString *)aString {
     if (!aString) return self;
     return [self stringByAppendingString:aString];
 }
 
-- (NSString *)yc_prefix:(NSString *)aString {
-    return [aString yc_suffix:self];
+- (NSString *)lc_prefix:(NSString *)aString {
+    return [aString lc_suffix:self];
 }
 
-- (NSString *)yc_wrapLeft:(NSString *)lString right:(NSString *)rString {
+- (NSString *)lc_wrapLeft:(NSString *)lString right:(NSString *)rString {
     
-    return [[self yc_prefix:lString] yc_suffix:rString];
+    return [[self lc_prefix:lString] lc_suffix:rString];
 }
 
-- (NSString *)yc_wrap:(NSString *)aString {
+- (NSString *)lc_wrap:(NSString *)aString {
     
-    return [self yc_wrapLeft:aString right:aString];
+    return [self lc_wrapLeft:aString right:aString];
 }
 
 - (NSString *)base64EncodeString:(NSString *)string
@@ -51,26 +51,26 @@
     return [data base64EncodedStringWithOptions:0];
 }
 
-- (NSString *)yc_344_mobile{
+- (NSString *)lc_344_mobile{
     if (self.length<11) {
         return self;
     }
    return [NSString stringWithFormat:@"%@-%@-%@",[self substringToIndex:3] ,[self substringWithRange:NSMakeRange(3, 4)],[self substringWithRange:NSMakeRange(7, 4)]];
 }
 
-- (NSString *)yc_344_mobile_empty{
+- (NSString *)lc_344_mobile_empty{
     if (self.length<11) {
         return self;
     }
     return [NSString stringWithFormat:@"%@ %@ %@",[self substringToIndex:3] ,[self substringWithRange:NSMakeRange(3, 4)],[self substringWithRange:NSMakeRange(7, 4)]];
 }
 
-- (NSString *)yc_deleteEmpty
+- (NSString *)lc_deleteEmpty
 {
     return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
-- (NSString *)yc_fourBitsConversion{
+- (NSString *)lc_fourBitsConversion{
     if (self && ![self isEqualToString:@""]) {
         NSInteger num = [self integerValue];
         if (num>=100000000) {
@@ -83,7 +83,7 @@
     return @"0.00万";
 }
 
-- (NSString *)yc_mileage{
+- (NSString *)lc_mileage{
     if (self && ![self isEqualToString:@""]) {
         NSInteger num = [self integerValue];
         if (num>=10000) {
@@ -140,7 +140,7 @@
     return getString;
 }
 
-- (NSString *)yc_leave2Decimal {
+- (NSString *)lc_leave2Decimal {
     return [NSString stringWithFormat:@"%.2lf",self.doubleValue];
 }
 
@@ -170,7 +170,7 @@
     return [tempStr1 capitalizedString];
 }
 
-+ (BOOL)yc_validMobile:(NSString *)mobile {
++ (BOOL)lc_validMobile:(NSString *)mobile {
     if (mobile.length != 11) {
         return NO;
     }
