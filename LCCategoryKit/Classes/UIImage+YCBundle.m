@@ -9,48 +9,6 @@
 
 @implementation UIImage (YCBundle)
 
-+ (instancetype)yc_creditImgWithName:(NSString *)name
-{
-    return [UIImage yc_imageWithNamed:name bundle:@"YCCreditModule" type:@"png"];
-}
-
-+ (instancetype)yc_businessImgWithName:(NSString *)name
-{
-   return [UIImage yc_imageWithNamed:name bundle:@"YCBusinessManagementModule" type:@"png"];
-}
-
-+ (instancetype)yc_loginImgWithName:(NSString *)name
-{
-    return [UIImage yc_imageWithNamed:name bundle: @"YCLoginModule" type:@"png"];
-}
-
-+ (instancetype)yc_loginImgWithName:(NSString *)name bundle:(NSString *)bundle
-{
-    return [UIImage yc_imageWithNamed:name bundle: bundle type:@"png"];
-}
-
-+ (instancetype)yc_homeImgWithName:(NSString *)name
-{
-    return [UIImage yc_imageWithNamed:name bundle:@"YCHomeModule" type:@"png"];
-}
-
-+ (instancetype)yc_homeImgWithName:(NSString *)name bundle:(NSString *)bundle
-{
-    return [UIImage yc_imageWithNamed:name bundle:bundle type:@"png"];
-}
-
-+ (instancetype)yc_mineImgWithName:(NSString *)name {
-   return [UIImage yc_imageWithNamed:name bundle:@"YCMineModule" type:@"png"];
-}
-
-+ (instancetype)yc_BaseImgWithName:(NSString *)name
-{
-    return [UIImage yc_imageWithNamed:name bundle:@"YCBaseUI" type:@"png"];
-}
-
-+ (UIImage *)yc_resourceModuleImgWithName:(NSString *)name {
-    return [UIImage yc_imageWithNamed:name bundle:@"YCResources" type:@"png"];
-}
 
 + (instancetype)yc_imgWithName:(NSString *)name bundle:(NSString *)bundleName{
     
@@ -74,18 +32,5 @@
     return nil;
 }
 
-+ (instancetype)yc_cdloginImgWithName:(NSString *)name
-{
-    return [UIImage yc_imageWithNamed:name bundle:@"YCCDLoginModule" type:@"png"];
-}
-
-+ (instancetype)yc_cdhomeImgWithName:(NSString *)name
-{
-    return [UIImage yc_imageWithNamed:name bundle:@"YCCDHomeModule" type:@"png"];
-}
-
-+ (instancetype)yc_auditImgWithName:(NSString *)name {
-    return [UIImage yc_imageWithNamed:name bundle:@"YCAuditManagementModule" type:@"png"];
-}
 
 @end
