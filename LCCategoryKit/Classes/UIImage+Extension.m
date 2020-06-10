@@ -182,7 +182,7 @@
 }
 
 + (instancetype)circleImage:(NSString *)name {
-    return [[self yc_resourceModuleImgWithName:name] circleImage];
+    return [[self imageNamed:name] circleImage];
 }
 
 /*!
