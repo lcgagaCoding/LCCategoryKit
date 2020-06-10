@@ -303,16 +303,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LCCategoryKit_Example/Pods-LCCategoryKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LCCategoryKit_Example/Pods-LCCategoryKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LCCategoryKit/LCCategoryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCCategoryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCCategoryKit_Example/Pods-LCCategoryKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCCategoryKit_Example/Pods-LCCategoryKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC36C4365E07A2FE6E46BE76 /* [CP] Check Pods Manifest.lock */ = {

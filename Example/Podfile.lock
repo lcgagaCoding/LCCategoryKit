@@ -1,16 +1,23 @@
 PODS:
-  - LCCategoryKit (0.1.0)
+  - LCCategoryKit (0.1.0):
+    - MBProgressHUD
+  - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
   - LCCategoryKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
 
 EXTERNAL SOURCES:
   LCCategoryKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LCCategoryKit: 676734c086e60eea8edf50cfa8ea99cf582cecad
+  LCCategoryKit: 047e972a7fbb0d31280e848d57bf8ee6937198ca
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
 PODFILE CHECKSUM: b4541e202d46f2f8fb4a39e212bf56ec07789c36
 
-COCOAPODS: 1.5.0.beta.1
+COCOAPODS: 1.9.3
